@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        .text{
+            text-align: center;
+        }
+       .one{
+           width: 32.33%;
+           height: 200px;
+           display: inline-block;
+           border: 2px solid black;
+           background-color: grey;
+           margin-left: 0.6%;
+       }
+       .two{
+           width: 32.33%;
+           height: 200px;
+
+           display: inline-block;
+           border: 2px solid black;
+           background-color: grey;
+       }
+       .three{
+           width: 32.33%;
+           height: 200px;
+
+           display: inline-block;
+           border: 2px solid black;
+           background-color: grey;
+       }
+       .innner{
+           display: block;
+       }
+       .text1{
+           padding:8%;
+       }
+       .inner{
+           top: 0%;
+           right: 0%;
+           width: 8vw;
+           border: 2px solid black;
+           float: right;
+       }
+       .first{
+           background-color: pink;
+       }
+       .second{
+           background-color: rgb(214, 67, 92);
+           color: white;
+       }
+       .third{
+           background-color: rgb(236, 183, 113);
+       }
+       @media (min-width:768px) and (max-width:991px) {
+           .three{
+               display: block;
+               width: 64.66%;
+               margin-left: 1%;
+               margin-top: 1%;
+           }
+           
+       }
+       @media (max-width:777px) {
+           .three{
+            margin-left: 6%;
+               margin-top: 1%; 
+               width: 80%;
+           }
+           .two{
+               display: block;
+               margin-left: 6%;
+               margin-top: 1%; 
+               width: 80%;
+           }
+           .one{
+            margin-left: 6%;
+            width: 80%;
+           }
+           .inner{
+               width: 20vw;
+           }
+           
+       }
+    </style>
+   
+</head>
+<body>
+    <div class="text">
+        <h1>Our Menu</h1>
+    </div>
+        <div class="one">
+            <div class="inner first">
+                <p>Chicken</p>
+            </div>
+            <div class="innner">
+                <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis iure perspiciatis ea quae voluptatibus maiores nulla pariatur beatae iusto?</p>
+            </div>
+        </div>
+        <div class="two">
+            <div class="inner second">
+                <p>Beef</p>
+            </div>
+            <div class="innner">
+                <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis iure perspiciatis ea quae voluptatibus maiores nulla pariatur beatae iusto?</p>
+            </div>
+        </div>
+        <div class="three">
+            <div class="inner third">
+                <p>Sushi</p>
+            </div>
+            <div class="innner">
+                <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis iure perspiciatis ea quae voluptatibus maiores nulla pariatur beatae iusto?</p>
+            </div>
+        </div>
+</body>
+</html>
